@@ -11,7 +11,7 @@ int countDigits(char[]);
 int main()
 {
     char password[SIZE];
-    int numdigits;
+    //int numdigits;
     
     cout << "Create your password: ";
     cin.getline(password,SIZE);
@@ -28,13 +28,13 @@ int main()
     return 0;
 }
 
-bool testPass(char uhPass[])
+bool testPass(char Pass[])
 {
     int numLetter, numDigits, length;
     
-    length = strlen(uhPass);
-    numLetter= countLetter(uhPass);
-    numDigits = countDigits(uhPass);
+    length = strlen(Pass);
+    numLetter= countLetter(Pass);
+    numDigits = countDigits(Pass);
     if(length == 7 && numLetter == 4 && numDigits == 3)
         return true;
     else
